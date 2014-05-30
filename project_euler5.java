@@ -2,7 +2,7 @@
 
 class project_euler5 {
 
-	public int answer;
+	public static int answer;
 	public static boolean answerFound = false;
 
 	public static boolean candidateDivisibleBy(int candidate, int divisor) {
@@ -28,7 +28,6 @@ class project_euler5 {
 		while (answerFound == false) {
 			if (divisibleByAllTwenty(candidate)) {
 				answerFound = true;
-				break;
 			}
 			candidate++;
 		}
