@@ -32,6 +32,5 @@ class project_euler5 {
 			candidate++;
 		}
 		System.out.println("The smallest positive number divisible by all numbers 1-20 is " + candidate);
-
 	}
 }
