@@ -12,7 +12,7 @@ class project_euler7 {
 			return true;
 		}
 
-		for (int i = 2; i < root; i++) {
+		for (int i = 2; i <= root; i++) {
 			if (candidate % i == 0) {
 				isPrime = false;
 				break;
