@@ -10,14 +10,16 @@ class project_euler3 {
 	}
 
 	public static boolean isPrime(int number) {
-		if (number == 2) {
-			return true;
-		}
 		boolean isPrime = true;
 		double square_root = Math.sqrt(number);
-		for (int i = 3; i < square_root; i += 2) {
+		if (number == 2) {
+			return isPrime;
+		}
+
+		for (int i = 2; i <= square_root; i++) {
 			if (number % i == 0) {
 				isPrime = false;
+				break;
 			}
 		}
 		return isPrime;
